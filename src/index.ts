@@ -23,4 +23,5 @@ readdirSync(handlersDirs).forEach(file => {
     require(`${handlersDirs}/${file}`)(client);
 });
 
+//
 client.login(process.env.TOKEN);
